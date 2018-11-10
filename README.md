@@ -28,13 +28,37 @@ This node.js app was created following the requierements on https://www.dropbox.
     . On project root folder run:
       $ npm i json-query
       
-#Runnig 
+#Running App
 
-- In order to test the app please in command promnt run node app.js
+- In order to test the app please in command promnt run node index.js
 
-By default server will be listening 3000 port
+By default server will be listening 3000 port.
+On your browser please enter:
 
-- http://localhost:3000/api/clients/getuserbypolicy/64cceef9-3a01-49ae-a23b-3761b604800b
+-- Get user data filtered by user id:
+http://localhost:3000/api/clients/getbyid/"REQUESTED_ID"
+EX:
+http://localhost:3000/api/clients/getbyid/a0ece5db-cd14-4f21-812f-966633e7be86
+
+
+-- Get user data filtered by user name
+http://localhost:3000/api/clients/getbyname/"REQUESTED_NAME"
+EX:
+http://localhost:3000/api/clients/getbyname/Britney
+
+
+-- Get list of policies linked to a user name
+http://localhost:3000/api/clients/getpoliciesbyname/"REQUESTED_NAME"
+EX:
+http://localhost:3000/api/clients/getpoliciesbyname/Britney
+
+
+-- Get user linked to a police number
+http://localhost:3000/api/clients/getuserbypolicy/"REQUESTED_POLICIEID"
+EX:
+http://localhost:3000/api/clients/getuserbypolicy/64cceef9-3a01-49ae-a23b-3761b604800b
+
+While running please check on your terminal for log information
 
 
 
